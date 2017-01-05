@@ -1,6 +1,6 @@
 {
   "name": "CVCocoaHTTPServer",
-  "version": "1.0.0",
+  "version": "1.0",
   "license": "BSD",
   "summary": "A small, lightweight, embeddable HTTP server for Mac OS X or iOS applications in Claro Video.",
   "homepage": "https://github.com/mikeshep/CVCocoaHTTPServer",
