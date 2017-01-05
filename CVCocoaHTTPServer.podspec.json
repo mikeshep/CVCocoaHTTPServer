@@ -1,15 +1,15 @@
 {
-  "name": "CocoaHTTPServer2",
-  "version": "2.4.2",
+  "name": "CVCocoaHTTPServer",
+  "version": "1.0.0",
   "license": "BSD",
-  "summary": "A small, lightweight, embeddable HTTP server for Mac OS X or iOS applications.",
-  "homepage": "https://github.com/huangjimmy/CocoaHTTPServer",
+  "summary": "A small, lightweight, embeddable HTTP server for Mac OS X or iOS applications in Claro Video.",
+  "homepage": "https://github.com/mikeshep/CVCocoaHTTPServer",
   "authors": {
     "Robbie Hanson": "cocoahttpserver@googlegroups.com"
   },
   "source": {
-    "git": "https://github.com/huangjimmy/CocoaHTTPServer.git",
-    "tag": "2.4.2"
+    "git": "https://github.com/mikeshep/CVCocoaHTTPServer.git",
+    "tag": "1.0.0"
   },
   "source_files": "{Core,Extensions}/**/*.{h,m}",
   "requires_arc": true,
