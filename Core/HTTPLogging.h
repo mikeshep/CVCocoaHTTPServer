@@ -96,19 +96,6 @@
 
 // Define logging primitives.
 
-//#ifndef LOG_MACRO
-
-
-#define LOG_MAYBE(async, lvl, flg, ctx, fnct, frmt, ...) \
-do { if ((lvl & flg) == flg) { LOG_MACRO(async, lvl, flg, ctx, nil, fnct, frmt, ##__VA_ARGS__); } } while(0)
-
-#define LOG_OBJC_MAYBE(async, lvl, flg, ctx, frmt, ...) \
-LOG_MAYBE(async, lvl, flg, ctx, sel_getName(_cmd), frmt, ##__VA_ARGS__)
-
-#define LOG_C_MAYBE(async, lvl, flg, ctx, frmt, ...) \
-LOG_MAYBE(async, lvl, flg, ctx, __FUNCTION__, frmt, ##__VA_ARGS__)
-
-//#endif
 
 #define HTTPLogError(frmt, ...)    LOG_OBJC_MAYBE(HTTP_LOG_ASYNC_ERROR,   httpLogLevel, HTTP_LOG_FLAG_ERROR,  \
                                                   HTTP_LOG_CONTEXT, frmt, ##__VA_ARGS__)
